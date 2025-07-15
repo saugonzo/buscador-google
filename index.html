@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buscador Personalizado</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Google Custom Search -->
     <script async src="https://cse.google.com/cse.js?cx=a66e86c9a91e84916"></script>
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        min-height: 100vh;
+        padding: 2rem;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .gcse-search {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #111;
+          color: #eee;
+        }
+
+        input, button {
+          background-color: #222;
+          color: #eee;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Mi Buscador Personalizado</h1>
+    <h1>🔎 Mi Buscador Personalizado</h1>
     <div class="gcse-search"></div>
   </body>
 </html>
